@@ -14,24 +14,74 @@
             background-color: red;
         } */
 
-        .some-class {
+        /* .some-class {
             width: 400px;
             height: 300px;
             background-color: red;
-        }
+        } */
 
-        a[target] {
+        /* a[target] {
+            color: red;
+        } */
+
+        /* a[target="blank"] {
             color: red;
         }
+
+        div[class*="wrap"] {
+            background-color: yellow;
+            width: 400px;
+            height: 300px;
+        } */
+
+        a[href^="http://www.link-group.eu"] {
+            color: red;
+        }
+
+        a[href$=".pdf"] {
+            color: red;
+        }
+
+        .heading {
+            color: blue;
+        }
+
+        a[title~="link"] {
+            color: rgb(1, 80, 252);
+        }
+
+        [class|="top"] {
+            color: red;
+        }
+
+        
+
     </style>
+
 
 </head>
 
 <body>
+    <div id="some-id" class=" some-class"> </div>
+
+    <a href="http://www.link-group.eu" target="blank" title="link"> Link Group</a>
+    <a href="http://www.link-group.eu/careers" target="self" title="link carrers"> Link Careers </a>
+    <a href="http://www.link-group.eu/about-us-0" target="self"> About Us </a>
+    <a href="http://google.com"> Google</a>
+
+    <div class="wrapper"></div>
+    <div class="wrap-01"></div>
+
+    <a href="demo.pdf"> download PDF</a>
+    <a href="demo.doc">download DOC </a>
+
+    <h1 class="heading animate fade">this document heading</h1>
+
+    <h1 class="top-header"> Welcome </h1>
+    <p class="top-text"> Hello World! </p>
+    <p class="top"> Hello world again! </p>
+    <p class="top text"> Hello world once more! </p>
 
 </body>
-
-<div id="some-id" class=" some-class"> </div>
-<a href="http://www.link-group.eu" target="blank"> Link Group</a>
 
 </html>
