@@ -8,21 +8,30 @@
     <title>Attribute Selectors</title>
 
     <style>
-        #some-id {
+        /* #some-id {
             width: 400px;
             height: 300px;
             background-color: red;
+        } */
 
+        .some-class {
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+
+        a[target] {
+            color: red;
         }
     </style>
-
-
 
 </head>
 
 <body>
 
 </body>
-<div id="some-id"> </div>
+
+<div id="some-id" class=" some-class"> </div>
+<a href="http://www.link-group.eu" target="blank"> Link Group</a>
 
 </html>
