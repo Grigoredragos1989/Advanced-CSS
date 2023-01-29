@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D CSS Transformations </title>
+
+    <style>
+        .box {
+            width: 180px;
+            height: 140px;
+            background-color: #38b6e2;
+            margin: 100px auto;
+            padding: 16px;
+        }
+
+        #box-1 {
+            /* transform: perspective(700px) rotateY(30deg);
+            perspective-origin: 0% 50%; */
+            transform: rotate3d(0, 1, 0, 45deg);
+        }
+
+        #box-2 {
+            /* transform: perspective(700px) translateZ(300px); */
+            transform: translate3d(0, 0, 100px);
+        }
+
+        #main-container {
+            perspective: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-container">
+        <div id="boxes-container">
+            <div id="box-1" class="box"> </div>
+            <div id="box-2" class="box"> </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
