@@ -7,19 +7,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animatie</title>
     <style>
+        body {
+            margin: 100px;
+            padding: 100px;
+            width: 100vh;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #050210;
+        }
 
+        /* pasul 1 - rotatia cercului */
 
+        .cerc {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            width: 50vh;
+            height: 50vh;
+            border: 1px solid white;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+        }
+
+        .cerc div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            animation: rotatie 3s linear infinite;
+        }
+
+        .cerc::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            filter: blur(30px);
+            animation: rotatie 3s linear infinite;
+        }
+
+        @keyframes rotatie {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* pasul 2 - pulsatia cercului */
+        .puls {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            width: 44vh;
+            height: 44vh;
+            border: 1px solid white;
+            background-color: #050210;
+            border-radius: 50%;
+            transform: translateX(3vh) translateY(3vh);
+        }
+
+        .puls::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: pulsare 1s ease-out infinite;
+        }
+
+        @keyframes pulsare {
+            0% {
+                transform: scale(0);
+                opacity: 0.1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="animatie">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    <div class="cerc"></div>
+    <div class="puls"></div>
+
+
 </body>
 
 </html>
