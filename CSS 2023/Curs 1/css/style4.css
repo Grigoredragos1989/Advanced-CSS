@@ -1,0 +1,21 @@
+div {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border: 5px solid red;
+    background: blueviolet;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+div>div {
+    background-color: antiquewhite;
+    color: red;
+    line-height: 40px;
+
+}
+
+div>div>div {
+    background-color: aqua;
+    line-height: 40px;
+}
