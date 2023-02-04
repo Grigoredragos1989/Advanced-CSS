@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+p {
+    font-style: italic;
+    text-align: center;
+}
+
+div {
+    border: 5px red double;
+}
+
+div:not(#myDiv2) {
+    background-color: aqua;
+}
+
+#myDiv2 {
+    width: 30%;
+    max-width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.myDiv {
+    margin: 25px 20px;
+    padding: 15px;
+}
+
+.myDiv3 {
+    font-size: 32px;
+
+}
