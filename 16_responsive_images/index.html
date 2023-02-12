@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Content - Images</title>
+    <style>
+        img {
+            max-width: 100%;
+            max-width: 500px;
+        }
+
+        /* #hero {
+            width: 600px;
+            height: 400px;
+            background-image: url("tokyo_2048w.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #hero {
+                background-image: url('./rsz_tokyo_1024w.jpg');
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #hero {
+                background-image: url('./tokyo_768w.jpg');
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            #hero {
+                background-image: url("./tokyo_414w.jpg");
+            }
+        }
+
+        @media only screen and (min-resolution: 2dppx) and (max-width: 414px) {
+
+            #hero {
+                background-image: url("./tokyo_414w@2.jpg");
+            }
+        }
+
+        @media only screen and (min-resolution: 3dppx) and (max-width: 414px) {
+
+            #hero {
+                background-image: url("./tokyo_414w@3.jpg");
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <img src="./tokyo_768w.jpg" alt="tokyo aerial view"> -->
+    <!-- <div id="hero"></div> -->
+    <!-- <img srcset="tokyo_414w.jpg 414w,tokyo_768w.jpg 768w,rsz_tokyo_1024w.jpg 1024w,tokyo_2048w.jpg 2048w"
+        sizes="(max-width:414px) 414px,(max-width:768px) 768px,(max-width:1024px) 1024px, 1280px"
+        src="./rsz_tokyo_1024w.jpg" alt="Tokyo Aerial View"> -->
+    <!-- <img srcset="tokyo_414w.jpg,tokyo_414@2.jpg 2x,tokyo_414@3.jpg 3x," alt="Tokyo Aerial View"
+        src="./tokyo_414w@2.jpg"> -->
+
+    <picture>
+        <source srcset="tokyo_414w.jpg" media="(max-width:414px )">
+        <source srcset="tokyo_768w.jpg" media="(max-width:768px" )>
+        <source srcset="rsz_tokyo_1024w.jpg" media="(max-width:1024px" )>
+        <source srcset="tokyo_2048w.jpg" media="(max-width:2048px" )>
+        <img src="./rsz_tokyo_1024w.jpg" alt="" srcset="">
+
+    </picture>
+</body>
+
+</html>
