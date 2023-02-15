@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Example</title>
+    <style>
+        body {
+            margin: 0px;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #wrapper {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #header {
+            flex-basis: 100%;
+            background-color: #5D7586;
+
+        }
+
+        #main {
+            background-color: #914e67;
+            flex-basis: 0%;
+            flex-grow: 5;
+
+        }
+
+        #main>p {
+            text-align: left;
+        }
+
+        #footer {
+            background-color: #444142;
+            flex-basis: 100%;
+        }
+
+        #aside-1 {
+            background-color: #535c63;
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+
+        #aside-2 {
+            background-color: #566875;
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+
+        #header,
+        #aside-1,
+        #aside-2,
+        #main,
+        #footer {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <h2>Header</h2>
+        </header>
+        <aside class="aside" id="aside-1">
+            <h2>Aside 1</h2>
+        </aside>
+        <div id="main">
+            <h2>Main</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aliquam expedita vero odio natus incidunt ad
+                id
+                tenetur suscipit aspernatur libero, maxime atque voluptatem dolorem ratione. Blanditiis eaque placeat
+                nostrum.
+            </p>
+        </div>
+        <aside class="aside" id="aside-2">
+            <h2>Aside 2</h2>
+        </aside>
+        <footer id="footer">
+            <h2>Footer</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
