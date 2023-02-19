@@ -1,7 +1,32 @@
-body {
-  font-family: sans-serif;
-  color: #A20687E;
+article h1 {
+  color: red;
 }
-h1 {
-  color: Blue;
+
+article h2 {
+  color: blue;
 }
+
+article p {
+  color: green;
+}
+
+.box {
+  width: 960px;
+}
+
+@media (min-width: 1280px) {
+  .box {
+    width: 800px;
+  }
+}
+
+#text-1 {
+  color: blue;
+  font-size: 16px;
+}
+
+#text-2 {
+  color: blue;
+  font-size: 18px;
+}
+

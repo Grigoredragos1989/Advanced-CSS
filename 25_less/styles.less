@@ -1,12 +1,90 @@
-@primary-dark-color: #A20687E;
+// @primary-dark-color: #A20687E;
 
-body {
-    font-family: sans-serif;
-    color: @primary-dark-color;
+// body {
+//     font-family: sans-serif;
+//     color: @primary-dark-color;
+// }
+
+// h1 {
+//     @primary-dark-color: Blue;
+//     color: @primary-dark-color;
+
+// }
+
+// @my-selector: box;
+// @w: width;
+
+// .@{my-selector} {
+//     width: 960px;
+//     margin: 0 auto;
+// }
+
+// .@{w} {
+//     width: 960px;
+//     margin: 0 auto;
+// }
+
+// @min1280: (min-width:1280px);
+
+// .box {
+//     @media @min1280 {
+//         width: 1024px;
+//     }
+// }
+
+// article {
+//     h1 {
+//         color: red;
+//     }
+
+//     h2 {
+//         color: blue;
+//     }
+
+//     p {
+//         color: green;
+//     }
+// }
+
+// .box {
+//     width: 960px;
+
+//     @media (min-width:1280px) {
+//         width: 800px;
+//     }
+// }
+
+// .foo() {
+//     color: blue;
+// }
+
+// #text-1 {
+//     .foo();
+//     font-size: 16px;
+
+// }
+
+// #text-2 {
+//     .foo();
+//     font-size: 18px;
+// }
+
+#sizes() {
+    mobile: 320px;
+    tablet: 768px;
+    desktop: 1280px;
 }
 
-h1 {
-    @primary-dark-color: Blue;
-    color: @primary-dark-color;
-
+.box {
+    @media (min-width: #sizes[tablet]) {
+        width: 300px;
+    }
 }
+
+@base_width =600px/960px;
+
+.box {
+    width: @base_width *100%;
+}
+
+@import url();
